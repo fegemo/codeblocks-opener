@@ -1,5 +1,5 @@
 # codeblocks
-.layout
-.depend
+*.layout
+*.depend
 bin/
 obj/
