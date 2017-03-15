@@ -6,24 +6,26 @@
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/codeblocks-opener" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
+			<Target title="Linux">
+				<Option output="bin/Linux/codeblocks-opener" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Linux/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option parameters="codeblocks:animacao-cor/CodeBlocks/animacao.cbp" />
 				<Compiler>
 					<Add option="-g" />
+					<Add option="-DLINUX" />
 				</Compiler>
 			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/codeblocks-opener" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
+			<Target title="Windows">
+				<Option output="bin/Windows/codeblocks-opener" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Windows/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option use_console_runner="0" />
+				<Option parameters="codeblocks:animacao-cor/CodeBlocks/animacao.cbp" />
 				<Compiler>
-					<Add option="-O3" />
+					<Add option="-g" />
+					<Add option="-DWINDOWS" />
 				</Compiler>
 			</Target>
 		</Build>
@@ -31,6 +33,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="config.properties" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

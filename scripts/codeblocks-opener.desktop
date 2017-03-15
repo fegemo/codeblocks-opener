@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=bash -c 'cd CODEBLOCKS_OPENER_PATH; ./CODEBLOCKS_OPENER_BIN %u'
+Icon=codeblocks
+StartupNotify=true
+Terminal=true
+Categories=Utility;X-XFCE;X-Xfce-Toplevel;
+MimeType=x-scheme-handler/codeblocks
+Name=Codeblocks opener
+Comment=Abre o Codeblocks no projeto especificado
